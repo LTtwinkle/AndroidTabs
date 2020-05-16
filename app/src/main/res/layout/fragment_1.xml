@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp"
+    tools:context=".ui.Fragment1.OneFragment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/rz"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="55dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="5dp"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/kj_icon"
+                android:src="@drawable/rj"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <TextView
+                android:id="@+id/kj_text"
+                android:layout_marginLeft="20dp"
+                android:text="书写日志"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/heng1"
+            android:layout_below="@+id/rz"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#EF9191"/>
+
+        <LinearLayout
+            android:id="@+id/pz"
+            android:layout_below="@+id/heng1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="5dp"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/xc_icon"
+                android:src="@drawable/pzt"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <TextView
+                android:id="@+id/xc_text"
+                android:layout_marginLeft="20dp"
+                android:text="拍照上传"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:id="@+id/heng2"
+            android:layout_below="@id/pz"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#EF9191"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
